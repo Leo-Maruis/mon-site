@@ -8,28 +8,54 @@
 
 body{
     margin:0;
-    background:#ececec;
+    background:#fafafa;
+    font-family:Arial, sans-serif;
     display:flex;
     justify-content:center;
     align-items:center;
     height:100vh;
-    font-family:Arial, sans-serif;
 }
 
 .onglet{
-    width:400px;
+    width:340px;
     background:white;
-    padding:30px;
-    border-radius:15px;
-    box-shadow:0 0 20px rgba(0,0,0,0.2);
+    border:1px solid #dbdbdb;
+    border-radius:12px;
+    padding:40px;
     text-align:center;
 }
 
-..logo{
+.logo{
+    width:170px;
     display:block;
-    width:100px;
-    margin:0 auto 20px auto;
+    margin:0 auto 25px auto;
 }
+
+input{
+    width:100%;
+    box-sizing:border-box;
+    padding:12px;
+    margin-bottom:10px;
+    border:1px solid #dbdbdb;
+    border-radius:8px;
+    background:#fafafa;
+    font-size:14px;
+}
+
+button{
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:8px;
+    background:#0095f6;
+    color:white;
+    font-size:16px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#1877f2;
 }
 
 </style>
@@ -40,11 +66,13 @@ body{
 
 <div class="onglet">
 
-<img src="instagram-logo-instagram-icon-transparent-free-png.webp" alt="Logo" class="logo">
+<img src="instagram-logo-instagram-icon-transparent-free-png.webp" class="logo">
 
-<h1>Bienvenue</h1>
+<input type="text" placeholder="Nom d'utilisateur">
 
-<p>Voici mon premier site !</p>
+<input type="password" placeholder="Mot de passe">
+
+<button>Connexion</button>
 
 </div>
 
